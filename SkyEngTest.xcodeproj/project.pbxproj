@@ -3,25 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3089E61D0365516EF9CD72FB /* Pods_SkyEngTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA957B179EC216EE30B5CBA /* Pods_SkyEngTest.framework */; };
+		B54D25F22493BFA400FE314E /* WordsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D25F12493BFA400FE314E /* WordsTVC.swift */; };
+		B54D25F62493C3A200FE314E /* MeaningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D25F52493C3A200FE314E /* MeaningVC.swift */; };
 		B5B301D1249399170086FFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301D0249399170086FFC8 /* AppDelegate.swift */; };
 		B5B301D3249399170086FFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301D2249399170086FFC8 /* SceneDelegate.swift */; };
-		B5B301D5249399170086FFC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301D4249399170086FFC8 /* ViewController.swift */; };
 		B5B301DA249399190086FFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B301D9249399190086FFC8 /* Assets.xcassets */; };
 		B5B301DD249399190086FFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B301DB249399190086FFC8 /* LaunchScreen.storyboard */; };
+		B5B301E524939CF20086FFC8 /* TranslateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301E424939CF20086FFC8 /* TranslateVC.swift */; };
+		B5B301EB24939F610086FFC8 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301EA24939F610086FFC8 /* BaseRouter.swift */; };
+		B5B301F42493A8AB0086FFC8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301F32493A8AB0086FFC8 /* Configuration.swift */; };
+		B5B301F72493A9050086FFC8 /* RWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301F62493A9050086FFC8 /* RWords.swift */; };
+		B5B301F92493A95A0086FFC8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301F82493A95A0086FFC8 /* API.swift */; };
+		B5B301FB2493AB040086FFC8 /* RMeanings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301FA2493AB040086FFC8 /* RMeanings.swift */; };
+		B5B301FD2493AC410086FFC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301FC2493AC410086FFC8 /* NetworkManager.swift */; };
+		B5B301FF2493AC940086FFC8 /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301FE2493AC940086FFC8 /* Meaning.swift */; };
+		B5B302012493ACCA0086FFC8 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302002493ACCA0086FFC8 /* Translation.swift */; };
+		B5B302032493AD440086FFC8 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302022493AD440086FFC8 /* Word.swift */; };
+		B5B302052493AE080086FFC8 /* ESpeechCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302042493AE080086FFC8 /* ESpeechCode.swift */; };
+		B5B302072493B9550086FFC8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302062493B9550086FFC8 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F5F42B6F7B0ACF0E1A31529 /* Pods-SkyEngTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTest.release.xcconfig"; path = "Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest.release.xcconfig"; sourceTree = "<group>"; };
+		7EA957B179EC216EE30B5CBA /* Pods_SkyEngTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54D25F12493BFA400FE314E /* WordsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTVC.swift; sourceTree = "<group>"; };
+		B54D25F52493C3A200FE314E /* MeaningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningVC.swift; sourceTree = "<group>"; };
 		B5B301CD249399170086FFC8 /* SkyEngTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B301D0249399170086FFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B301D2249399170086FFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5B301D4249399170086FFC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5B301D9249399190086FFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B301DC249399190086FFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5B301DE249399190086FFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B301E424939CF20086FFC8 /* TranslateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateVC.swift; sourceTree = "<group>"; };
+		B5B301EA24939F610086FFC8 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		B5B301EF2493A06B0086FFC8 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		B5B301F02493A1950086FFC8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		B5B301F12493A1A10086FFC8 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		B5B301F32493A8AB0086FFC8 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		B5B301F62493A9050086FFC8 /* RWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWords.swift; sourceTree = "<group>"; };
+		B5B301F82493A95A0086FFC8 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B5B301FA2493AB040086FFC8 /* RMeanings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMeanings.swift; sourceTree = "<group>"; };
+		B5B301FC2493AC410086FFC8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B5B301FE2493AC940086FFC8 /* Meaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meaning.swift; sourceTree = "<group>"; };
+		B5B302002493ACCA0086FFC8 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		B5B302022493AD440086FFC8 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		B5B302042493AE080086FFC8 /* ESpeechCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESpeechCode.swift; sourceTree = "<group>"; };
+		B5B302062493B9550086FFC8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		BB72F9045B0A07CEF310419A /* Pods-SkyEngTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTest.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +62,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3089E61D0365516EF9CD72FB /* Pods_SkyEngTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403B2AC01880F8AD866C7B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA957B179EC216EE30B5CBA /* Pods_SkyEngTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0C321776A47E1C6ECB9375 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB72F9045B0A07CEF310419A /* Pods-SkyEngTest.debug.xcconfig */,
+				0F5F42B6F7B0ACF0E1A31529 /* Pods-SkyEngTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B54D25F32493C36A00FE314E /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				B5B301E424939CF20086FFC8 /* TranslateVC.swift */,
+				B54D25F12493BFA400FE314E /* WordsTVC.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		B54D25F42493C37C00FE314E /* Meaning */ = {
+			isa = PBXGroup;
+			children = (
+				B54D25F52493C3A200FE314E /* MeaningVC.swift */,
+			);
+			path = Meaning;
+			sourceTree = "<group>";
+		};
 		B5B301C4249399170086FFC8 = {
 			isa = PBXGroup;
 			children = (
+				B5B301E624939E5A0086FFC8 /* Source */,
 				B5B301CF249399170086FFC8 /* SkyEngTest */,
 				B5B301CE249399170086FFC8 /* Products */,
+				AA0C321776A47E1C6ECB9375 /* Pods */,
+				403B2AC01880F8AD866C7B3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +127,82 @@
 			children = (
 				B5B301D0249399170086FFC8 /* AppDelegate.swift */,
 				B5B301D2249399170086FFC8 /* SceneDelegate.swift */,
-				B5B301D4249399170086FFC8 /* ViewController.swift */,
 				B5B301D9249399190086FFC8 /* Assets.xcassets */,
 				B5B301DB249399190086FFC8 /* LaunchScreen.storyboard */,
 				B5B301DE249399190086FFC8 /* Info.plist */,
 			);
 			path = SkyEngTest;
+			sourceTree = "<group>";
+		};
+		B5B301E624939E5A0086FFC8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B5B301F22493A89F0086FFC8 /* Models */,
+				B5B301EC24939FC50086FFC8 /* Configuration */,
+				B5B301E724939E740086FFC8 /* Modules */,
+				B5B301E824939E870086FFC8 /* Network */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B5B301E724939E740086FFC8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B54D25F42493C37C00FE314E /* Meaning */,
+				B54D25F32493C36A00FE314E /* Translate */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B5B301E824939E870086FFC8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B5B301F52493A8E50086FFC8 /* API */,
+				B5B301E924939F550086FFC8 /* Base */,
+				B5B301FC2493AC410086FFC8 /* NetworkManager.swift */,
+				B5B302062493B9550086FFC8 /* ApiClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B5B301E924939F550086FFC8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B5B301EA24939F610086FFC8 /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B5B301EC24939FC50086FFC8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B5B301F32493A8AB0086FFC8 /* Configuration.swift */,
+				B5B301EF2493A06B0086FFC8 /* Base.xcconfig */,
+				B5B301F02493A1950086FFC8 /* Debug.xcconfig */,
+				B5B301F12493A1A10086FFC8 /* Release.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B5B301F22493A89F0086FFC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5B301FE2493AC940086FFC8 /* Meaning.swift */,
+				B5B302002493ACCA0086FFC8 /* Translation.swift */,
+				B5B302022493AD440086FFC8 /* Word.swift */,
+				B5B302042493AE080086FFC8 /* ESpeechCode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5B301F52493A8E50086FFC8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B5B301F62493A9050086FFC8 /* RWords.swift */,
+				B5B301F82493A95A0086FFC8 /* API.swift */,
+				B5B301FA2493AB040086FFC8 /* RMeanings.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5B301E1249399190086FFC8 /* Build configuration list for PBXNativeTarget "SkyEngTest" */;
 			buildPhases = (
+				4E93ED87D7FBD724105DA6BD /* [CP] Check Pods Manifest.lock */,
 				B5B301C9249399170086FFC8 /* Sources */,
 				B5B301CA249399170086FFC8 /* Frameworks */,
 				B5B301CB249399170086FFC8 /* Resources */,
+				A7CE3499244848937626A698 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,14 +272,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E93ED87D7FBD724105DA6BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyEngTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CE3499244848937626A698 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5B301C9249399170086FFC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B301D5249399170086FFC8 /* ViewController.swift in Sources */,
+				B5B301FD2493AC410086FFC8 /* NetworkManager.swift in Sources */,
+				B54D25F22493BFA400FE314E /* WordsTVC.swift in Sources */,
+				B54D25F62493C3A200FE314E /* MeaningVC.swift in Sources */,
 				B5B301D1249399170086FFC8 /* AppDelegate.swift in Sources */,
+				B5B301F72493A9050086FFC8 /* RWords.swift in Sources */,
+				B5B302012493ACCA0086FFC8 /* Translation.swift in Sources */,
+				B5B301FB2493AB040086FFC8 /* RMeanings.swift in Sources */,
+				B5B302032493AD440086FFC8 /* Word.swift in Sources */,
+				B5B301F42493A8AB0086FFC8 /* Configuration.swift in Sources */,
+				B5B301FF2493AC940086FFC8 /* Meaning.swift in Sources */,
 				B5B301D3249399170086FFC8 /* SceneDelegate.swift in Sources */,
+				B5B301E524939CF20086FFC8 /* TranslateVC.swift in Sources */,
+				B5B302052493AE080086FFC8 /* ESpeechCode.swift in Sources */,
+				B5B302072493B9550086FFC8 /* ApiClient.swift in Sources */,
+				B5B301EB24939F610086FFC8 /* BaseRouter.swift in Sources */,
+				B5B301F92493A95A0086FFC8 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +354,7 @@
 /* Begin XCBuildConfiguration section */
 		B5B301DF249399190086FFC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B301F02493A1950086FFC8 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -216,6 +415,7 @@
 		};
 		B5B301E0249399190086FFC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B301F12493A1A10086FFC8 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
