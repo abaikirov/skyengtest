@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.windowScene = windowScene
-    window?.rootViewController = TranslateVC(NetworkManager())
+    window?.rootViewController = UINavigationController(rootViewController: TranslateVC(NetworkManager()))
     window?.makeKeyAndVisible()
   }
 

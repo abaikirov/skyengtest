@@ -35,14 +35,50 @@ class TranslateVC: UIViewController {
   }
   
   private func setupViews() {
+    setupKeyboardListener()
+    setupNavigationController()
+    setupWordsTable()
+  }
+  
+  private func setupKeyboardListener() {
+    let center = NotificationCenter.default
+    center.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+    center.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+  }
+  
+  @objc private func keyboardWillShow(_ notification: Notification) {
+    let userInfo = notification.userInfo
+    let frame  = userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+    let contentInset = UIEdgeInsets(top: 0, left: 0, bottom: frame.height, right: 0)
+    wordsTable.contentInset = contentInset
+  }
+  
+  @objc private func keyboardWillHide(_ notification: Notification) {
+    wordsTable.contentInset = UIEdgeInsets.zero
+  }
+  
+  private func setupNavigationController() {
+    navigationItem.title = "Translate"
+    navigationController?.navigationBar.prefersLargeTitles = true
+    navigationController?.navigationItem.largeTitleDisplayMode = .never
+    
+    let search = UISearchController(searchResultsController: nil)
+    search.searchResultsUpdater = self
+    search.obscuresBackgroundDuringPresentation = false
+    search.searchBar.placeholder = "Search word translate..."
+    navigationItem.searchController = search
+    
+    definesPresentationContext = true
+  }
+  
+  private func setupWordsTable() {
     wordsTable = UITableView()
     wordsTable.dataSource = self
     wordsTable.register(WordsTVC.self, forCellReuseIdentifier: WordsTVC.reuseID)
     view.addSubview(wordsTable)
     wordsTable.snp.makeConstraints { (maker) in
       maker.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-      maker.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
-      maker.leading.trailing.equalToSuperview()
+      maker.bottom.leading.trailing.equalToSuperview()
     }
   }
   
@@ -51,7 +87,6 @@ class TranslateVC: UIViewController {
       switch result {
       case .success(let words):
         self.words = words
-        print(words)
       case .failure(let error):
         print(error)
       }
@@ -72,5 +107,13 @@ extension TranslateVC: UITableViewDataSource {
     cell.onBind(words[indexPath.item])
     
     return cell
+  }
+}
+
+extension TranslateVC: UISearchResultsUpdating {
+  func updateSearchResults(for searchController: UISearchController) {
+    if let text = searchController.searchBar.text, !text.isEmpty {
+      fetchWords(text)
+    }
   }
 }
