@@ -74,6 +74,7 @@ class TranslateVC: UIViewController {
   private func setupWordsTable() {
     wordsTable = UITableView()
     wordsTable.dataSource = self
+    wordsTable.delegate = self
     wordsTable.register(WordsTVC.self, forCellReuseIdentifier: WordsTVC.reuseID)
     view.addSubview(wordsTable)
     wordsTable.snp.makeConstraints { (maker) in
@@ -94,9 +95,13 @@ class TranslateVC: UIViewController {
   }
 }
 
-extension TranslateVC: UITableViewDataSource {
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension TranslateVC: UITableViewDataSource, UITableViewDelegate {
+  func numberOfSections(in tableView: UITableView) -> Int {
     words.count
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    words[section].meanings.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -104,9 +109,19 @@ extension TranslateVC: UITableViewDataSource {
       fatalError()
     }
     
-    cell.onBind(words[indexPath.item])
+    cell.onBind(words[indexPath.section].meanings[indexPath.item])
     
     return cell
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let meaningVC = MeaningVC(words[indexPath.section].meanings[indexPath.item], networkManager: networkManager)
+    tableView.deselectRow(at: indexPath, animated: true)
+    navigationController?.pushViewController(meaningVC, animated: true)
+  }
+  
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    words[section].text
   }
 }
 

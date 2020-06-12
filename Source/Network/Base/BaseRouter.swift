@@ -58,18 +58,16 @@ protocol BaseRequest: Encodable, Parameterized {
 }
 
 protocol Parameterized {
-  func toParameters() -> Parameters
+  func toParameters() throws -> Parameters
 }
 
 extension Parameterized where Self: Encodable {
-  func toParameters() -> Parameters {
-    do {
-      let data = try JSONEncoder().encode(self)
-      if let dict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-        return dict
-      }
-    } catch {
-      print(error)
+  func toParameters() throws -> Parameters {
+    let encoder = JSONEncoder()
+    encoder.dateEncodingStrategy = .formatted(SEDateFormatter())
+    let data = try encoder.encode(self)
+    if let dict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+      return dict
     }
     return [:]
   }

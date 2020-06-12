@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 struct RMeanings: BaseRequest {
-  let ids: [String]
+  let ids: String
   let updatedAt: Date
   
   func asUrlRequest() -> URLRequestConvertible {

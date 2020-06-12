@@ -34,12 +34,12 @@ enum API: BaseRouter {
   var parameters: Parameters? {
     switch self {
     case .meanings(let request), .words(let request):
-      return request.toParameters()
+      return try? request.toParameters()
     }
   }
   
   var headers: [String : String]? {
-    return nil
+    return ["accept": "application/json"]
   }
   
   var body: Data? {

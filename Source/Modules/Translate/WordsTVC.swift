@@ -24,13 +24,14 @@ class WordsTVC: UITableViewCell {
   
   private func setupViews() {
     title = UILabel()
+    title.numberOfLines = 0
     contentView.addSubview(title)
     title.snp.makeConstraints { (maker) in
       maker.edges.equalToSuperview().inset(16)
     }
   }
   
-  func onBind(_ word: Word) {
-    title.text = word.text
+  func onBind(_ meaning: Meaning) {
+    title.text = meaning.translation.text
   }
 }
