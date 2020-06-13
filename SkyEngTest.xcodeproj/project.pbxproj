@@ -19,6 +19,7 @@
 		B54D26062493CF3800FE314E /* SimilarMeaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D26052493CF3800FE314E /* SimilarMeaning.swift */; };
 		B54D26082493CF9C00FE314E /* AlternativeTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D26072493CF9C00FE314E /* AlternativeTranslation.swift */; };
 		B54D260B2493D2D900FE314E /* SEDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D260A2493D2D900FE314E /* SEDateFormatter.swift */; };
+		B54D260D2494001000FE314E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D260C2494001000FE314E /* Constants.swift */; };
 		B5B301D1249399170086FFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301D0249399170086FFC8 /* AppDelegate.swift */; };
 		B5B301D3249399170086FFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301D2249399170086FFC8 /* SceneDelegate.swift */; };
 		B5B301DA249399190086FFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B301D9249399190086FFC8 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		B54D26052493CF3800FE314E /* SimilarMeaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarMeaning.swift; sourceTree = "<group>"; };
 		B54D26072493CF9C00FE314E /* AlternativeTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeTranslation.swift; sourceTree = "<group>"; };
 		B54D260A2493D2D900FE314E /* SEDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEDateFormatter.swift; sourceTree = "<group>"; };
+		B54D260C2494001000FE314E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5B301CD249399170086FFC8 /* SkyEngTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B301D0249399170086FFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B301D2249399170086FFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				B54D260A2493D2D900FE314E /* SEDateFormatter.swift */,
+				B54D260C2494001000FE314E /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				B54D26022493CEA900FE314E /* Definition.swift in Sources */,
 				B54D25FE2493CDA800FE314E /* Properties.swift in Sources */,
 				B54D26042493CEE000FE314E /* Example.swift in Sources */,
+				B54D260D2494001000FE314E /* Constants.swift in Sources */,
 				B5B301F72493A9050086FFC8 /* RWords.swift in Sources */,
 				B5B302012493ACCA0086FFC8 /* Translation.swift in Sources */,
 				B5B301FB2493AB040086FFC8 /* RMeanings.swift in Sources */,
@@ -522,6 +526,7 @@
 		};
 		B5B301E2249399190086FFC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB72F9045B0A07CEF310419A /* Pods-SkyEngTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +545,7 @@
 		};
 		B5B301E3249399190086FFC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5F42B6F7B0ACF0E1A31529 /* Pods-SkyEngTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

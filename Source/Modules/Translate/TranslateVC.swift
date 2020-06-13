@@ -13,6 +13,8 @@ class TranslateVC: UIViewController {
   private let networkManager: INetworkManager
   private var wordsTable: UITableView!
   
+  private var searchTimer: Timer?
+  
   private var words: [Word] = [] {
     didSet {
       wordsTable.reloadData()
@@ -31,7 +33,6 @@ class TranslateVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
-    fetchWords("слово")
   }
   
   private func setupViews() {
@@ -61,6 +62,7 @@ class TranslateVC: UIViewController {
     navigationItem.title = "Translate"
     navigationController?.navigationBar.prefersLargeTitles = true
     navigationController?.navigationItem.largeTitleDisplayMode = .never
+    navigationController?.navigationBar.backgroundColor = .systemGray6
     
     let search = UISearchController(searchResultsController: nil)
     search.searchResultsUpdater = self
@@ -128,7 +130,12 @@ extension TranslateVC: UITableViewDataSource, UITableViewDelegate {
 extension TranslateVC: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
     if let text = searchController.searchBar.text, !text.isEmpty {
-      fetchWords(text)
+      searchTimer?.invalidate()
+      searchTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: { (timer) in
+        self.fetchWords(text)
+      })
+    } else {
+      words.removeAll()
     }
   }
 }

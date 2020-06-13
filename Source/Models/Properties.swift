@@ -9,8 +9,8 @@
 import Foundation
 
 struct Properties: Decodable {
-  let collocation: Bool
-  let countability: String
-  let irregularPlural: Bool
-  let falseFriends: [String]
+  let collocation: Bool?
+  let countability: String?
+  let irregularPlural: Bool?
+  let falseFriends: [String]?
 }
