@@ -31,14 +31,16 @@ class ScrollVC: UIViewController {
         // Fallback on earlier versions
         maker.top.equalTo(topLayoutGuide.snp.bottom)
       }
-      maker.bottom.leading.trailing.equalToSuperview()
+      maker.leading.equalTo(view.safeAreaLayoutGuide.snp.leading)
+      maker.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing)
+      maker.bottom.equalToSuperview()
     }
     
     let contentView = UIView()
     scrollView.addSubview(contentView)
     contentView.snp.makeConstraints { (maker) in
       maker.edges.equalToSuperview()
-      maker.width.equalTo(view.snp.width)
+      maker.width.equalTo(view.safeAreaLayoutGuide.snp.width)
     }
     
     setupContentView(contentView)

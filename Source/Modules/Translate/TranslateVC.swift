@@ -37,6 +37,7 @@ class TranslateVC: UIViewController {
   }
   
   private func setupViews() {
+    view.backgroundColor = .systemBackground
     setupKeyboardListener()
     setupNavigationController()
     setupWordsTable()
@@ -81,8 +82,7 @@ class TranslateVC: UIViewController {
     wordsTable.register(WordsTVC.self, forCellReuseIdentifier: WordsTVC.reuseID)
     view.addSubview(wordsTable)
     wordsTable.snp.makeConstraints { (maker) in
-      maker.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-      maker.bottom.leading.trailing.equalToSuperview()
+      maker.edges.equalTo(view.safeAreaLayoutGuide.snp.edges)
     }
   }
   
@@ -127,11 +127,11 @@ extension TranslateVC: UITableViewDataSource, UITableViewDelegate {
     let header = UIView()
     header.backgroundColor = .secondarySystemBackground
     let title = UILabel()
-    title.font = UIFont.boldSystemFont(ofSize: 30)
+    title.font = UIFont.boldSystemFont(ofSize: 24)
     title.text = words[section].text
     header.addSubview(title)
     title.snp.makeConstraints { (maker) in
-      maker.edges.equalToSuperview().inset(Constants.Offset.main)
+      maker.edges.equalToSuperview().inset(Constants.Offset.small)
     }
     
     return header
