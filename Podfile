@@ -9,4 +9,5 @@ target 'SkyEngTest' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 5.0'
+  pod 'ShimmerSwift'
 end

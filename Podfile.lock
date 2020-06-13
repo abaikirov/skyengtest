@@ -3,24 +3,28 @@ PODS:
   - Kingfisher (5.14.0):
     - Kingfisher/Core (= 5.14.0)
   - Kingfisher/Core (5.14.0)
+  - ShimmerSwift (2.1.1)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Kingfisher (~> 5.0)
+  - ShimmerSwift
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - ShimmerSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  ShimmerSwift: f7ed2daf9c246de8299dfd9e12c6ab465cba9842
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 5cd88676e1a6776486b67eabc88e3b2739a7aba2
+PODFILE CHECKSUM: be29853a5e986677977e962f019f2f7c9cecbeed
 
 COCOAPODS: 1.8.4

@@ -8,11 +8,13 @@
 
 import UIKit
 import Kingfisher
+import ShimmerSwift
 
 class MeaningVC: ScrollVC {
   private let meaning: Meaning
   private let networkManager: INetworkManager
   
+  private var shimmeringImage: ShimmeringView!
   private var image: UIImageView!
   private var translation: UILabel!
   private var definition: UILabel!
@@ -39,13 +41,24 @@ class MeaningVC: ScrollVC {
   }
   
   override func setupContentView(_ contentView: UIView) {
+    shimmeringImage = ShimmeringView()
+    
+    contentView.addSubview(shimmeringImage)
+    shimmeringImage.snp.makeConstraints { (maker) in
+      maker.top.leading.trailing.equalToSuperview()
+      maker.height.equalTo(imageHeight)
+    }
+    
     image = UIImageView()
+    image.backgroundColor = .systemGray3
     image.contentMode = .scaleAspectFill
     contentView.addSubview(image)
     image.snp.makeConstraints { (maker) in
       maker.top.leading.trailing.equalToSuperview()
       maker.height.equalTo(imageHeight)
     }
+    
+    shimmeringImage.contentView = image
     
     text = UILabel()
     text.font = Constants.Fonts.T1
@@ -97,7 +110,10 @@ class MeaningVC: ScrollVC {
   private func setupViews() {
     view.backgroundColor = .systemBackground
     navigationItem.largeTitleDisplayMode = .never
-    image.kf.setImage(with: URL(string: "https:\(meaning.imageUrl)"))
+    shimmeringImage.isShimmering = true
+    image.kf.setImage(with: URL(string: "https:\(meaning.imageUrl)")) { (_) in
+      self.shimmeringImage.isShimmering = false
+    }
   }
   
   private func getExampleLabel(_ text: String) -> UILabel {
