@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.backgroundColor = .systemGray6
     window?.windowScene = windowScene
-    window?.rootViewController = UINavigationController(rootViewController: TranslateVC(NetworkManager()))
+    window?.rootViewController = UINavigationController(rootViewController: TranslateVC.instance())
     window?.makeKeyAndVisible()
   }
 

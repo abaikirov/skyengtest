@@ -26,6 +26,7 @@ class NetworkManager: INetworkManager {
   }
   
   private func request<T: Decodable>(_ request: BaseRequest, complition: @escaping (Result<T, Error>) -> Void) {
+    print(request.asUrlRequest().urlRequest?.url)
     ApiClient.request(request) { (response) in
       switch response.result {
       case .success(let data):

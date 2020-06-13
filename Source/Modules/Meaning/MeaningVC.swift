@@ -10,9 +10,12 @@ import UIKit
 import Kingfisher
 import ShimmerSwift
 
+protocol IMeaningVC: class {
+  func showMeaning(_ fullMeaning: FullMeaning)
+}
+
 class MeaningVC: ScrollVC {
-  private let meaning: Meaning
-  private let networkManager: INetworkManager
+  private let viewModel: IMeaningVM
   
   private var shimmeringImage: ShimmeringView!
   private var image: UIImageView!
@@ -24,9 +27,8 @@ class MeaningVC: ScrollVC {
   
   private let imageHeight: CGFloat = 300
   
-  init(_ meaning: Meaning, networkManager: INetworkManager) {
-    self.meaning = meaning
-    self.networkManager = networkManager
+  init(_ viewModel: IMeaningVM) {
+    self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
   }
   
@@ -37,7 +39,7 @@ class MeaningVC: ScrollVC {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
-    fetchWordMeanings()
+    viewModel.fetchMeanings()
   }
   
   override func setupContentView(_ contentView: UIView) {
@@ -112,7 +114,7 @@ class MeaningVC: ScrollVC {
     view.backgroundColor = .systemBackground
     navigationItem.largeTitleDisplayMode = .never
     shimmeringImage.isShimmering = true
-    image.kf.setImage(with: URL(string: "https:\(meaning.imageUrl)")) { (_) in
+    image.kf.setImage(with: viewModel.imageUrl) { (_) in
       self.shimmeringImage.isShimmering = false
     }
   }
@@ -125,23 +127,10 @@ class MeaningVC: ScrollVC {
     label.textColor = .systemGray3
     return label
   }
-  
-  private func fetchWordMeanings() {
-    networkManager.meanings([meaning.id], from: Date()) { (result) in
-      switch result {
-      case .success(let meanings):
-        self.onFetchMeanings(meanings)
-      case .failure(let error):
-        print(error)
-      }
-    }
-  }
-  
-  private func onFetchMeanings(_ meanings: [FullMeaning]) {
-    guard let fullMeaning = meanings.first else {
-      return
-    }
-    
+}
+
+extension MeaningVC: IMeaningVC {
+  func showMeaning(_ fullMeaning: FullMeaning) {
     text.text = fullMeaning.text
     transcription.text = "[\(fullMeaning.transcription)]"
     translation.text = fullMeaning.translation.text
@@ -149,5 +138,14 @@ class MeaningVC: ScrollVC {
     fullMeaning.examples.forEach { (example) in
       examplesStack.addArrangedSubview(getExampleLabel(example.text))
     }
+  }
+}
+
+extension MeaningVC {
+  static func instance(_ meaning: Meaning) -> MeaningVC {
+    let vm = MeaningVM(meaning: meaning, networkManager: NetworkManager())
+    let vc = MeaningVC(vm)
+    vm.meaningVC = vc
+    return vc
   }
 }

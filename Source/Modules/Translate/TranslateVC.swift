@@ -9,20 +9,16 @@
 import UIKit
 import SnapKit
 
+protocol ITransalteVC: class {
+  func updateWords()
+}
+
 class TranslateVC: UIViewController {
-  private let networkManager: INetworkManager
+  private let viewModel: ITranslateVM
   private var wordsTable: UITableView!
   
-  private var searchTimer: Timer?
-  
-  private var words: [Word] = [] {
-    didSet {
-      wordsTable.reloadData()
-    }
-  }
-  
-  init(_ networkManager: INetworkManager) {
-    self.networkManager = networkManager
+  init(_ viewModel: ITranslateVM) {
+    self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
   }
   
@@ -33,7 +29,6 @@ class TranslateVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
-    fetchWords("Слово")
   }
   
   private func setupViews() {
@@ -85,35 +80,22 @@ class TranslateVC: UIViewController {
       maker.edges.equalTo(view.safeAreaLayoutGuide.snp.edges)
     }
   }
-  
-  private func fetchWords(_ search: String) {
-    networkManager.words(search, page: nil, pageSize: nil) { (result) in
-      switch result {
-      case .success(let words):
-        self.words = words
-      case .failure(let error):
-        print(error)
-      }
-    }
-  }
 }
 
 extension TranslateVC: UITableViewDataSource, UITableViewDelegate {
   func numberOfSections(in tableView: UITableView) -> Int {
-    words.count
+    viewModel.sectionsCount
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    words[section].meanings.count
+    viewModel.itemsCount(for: section)
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: WordsTVC.reuseID) as? WordsTVC else {
       fatalError()
     }
-    
-    cell.onBind(words[indexPath.section].meanings[indexPath.item])
-    
+    cell.onBind(viewModel.meaning(for: indexPath.section, item: indexPath.item))
     return cell
   }
   
@@ -122,7 +104,7 @@ extension TranslateVC: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let meaningVC = MeaningVC(words[indexPath.section].meanings[indexPath.item], networkManager: networkManager)
+    let meaningVC = MeaningVC.instance(viewModel.meaning(for: indexPath.section, item: indexPath.item))
     tableView.deselectRow(at: indexPath, animated: true)
     navigationController?.pushViewController(meaningVC, animated: true)
   }
@@ -132,25 +114,32 @@ extension TranslateVC: UITableViewDataSource, UITableViewDelegate {
     header.backgroundColor = .secondarySystemBackground
     let title = UILabel()
     title.font = UIFont.boldSystemFont(ofSize: 24)
-    title.text = words[section].text
+    title.text = viewModel.title(for: section)
     header.addSubview(title)
     title.snp.makeConstraints { (maker) in
       maker.edges.equalToSuperview().inset(Constants.Offset.small)
     }
-    
     return header
   }
 }
 
 extension TranslateVC: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
-    if let text = searchController.searchBar.text, !text.isEmpty {
-      searchTimer?.invalidate()
-      searchTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: { (timer) in
-        self.fetchWords(text)
-      })
-    } else {
-      words.removeAll()
-    }
+    viewModel.search(searchController.searchBar.text)
+  }
+}
+
+extension TranslateVC: ITransalteVC {
+  func updateWords() {
+    wordsTable.reloadData()
+  }
+}
+
+extension TranslateVC {
+  static func instance() -> TranslateVC {
+    let vm = TranslateVM(NetworkManager())
+    let vc = TranslateVC(vm)
+    vm.translateVC = vc
+    return vc
   }
 }
