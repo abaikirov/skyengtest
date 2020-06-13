@@ -33,6 +33,7 @@ class TranslateVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
+    fetchWords("Слово")
   }
   
   private func setupViews() {
@@ -122,8 +123,18 @@ extension TranslateVC: UITableViewDataSource, UITableViewDelegate {
     navigationController?.pushViewController(meaningVC, animated: true)
   }
   
-  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    words[section].text
+  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    let header = UIView()
+    header.backgroundColor = .secondarySystemBackground
+    let title = UILabel()
+    title.font = UIFont.boldSystemFont(ofSize: 30)
+    title.text = words[section].text
+    header.addSubview(title)
+    title.snp.makeConstraints { (maker) in
+      maker.edges.equalToSuperview().inset(Constants.Offset.main)
+    }
+    
+    return header
   }
 }
 
