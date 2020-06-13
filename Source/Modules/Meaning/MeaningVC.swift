@@ -52,6 +52,7 @@ class MeaningVC: ScrollVC {
     image = UIImageView()
     image.backgroundColor = .systemGray3
     image.contentMode = .scaleAspectFill
+    image.clipsToBounds = true
     contentView.addSubview(image)
     image.snp.makeConstraints { (maker) in
       maker.top.leading.trailing.equalToSuperview()
