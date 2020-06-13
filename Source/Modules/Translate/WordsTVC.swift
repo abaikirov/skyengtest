@@ -32,7 +32,6 @@ class WordsTVC: UITableViewCell {
     wordImage.layer.cornerRadius = 5
     contentView.addSubview(wordImage)
     wordImage.snp.makeConstraints { (maker) in
-      maker.height.equalTo(40)
       maker.width.equalTo(60)
       maker.top.leading.bottom.equalToSuperview().inset(Constants.Offset.main)
     }
