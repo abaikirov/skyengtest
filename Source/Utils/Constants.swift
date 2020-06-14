@@ -18,5 +18,6 @@ struct Constants {
   struct Fonts {
     static let T1 = UIFont.systemFont(ofSize: 24)
     static let T2 = UIFont.systemFont(ofSize: 16)
+    static let big = UIFont.boldSystemFont(ofSize: 30)
   }
 }

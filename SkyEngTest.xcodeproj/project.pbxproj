@@ -48,6 +48,10 @@
 		B5E77FDC24966257000DD642 /* EmptyMeaningVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FDB24966257000DD642 /* EmptyMeaningVMTests.swift */; };
 		B5E77FDE24966271000DD642 /* MockMeaningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FDD24966271000DD642 /* MockMeaningVC.swift */; };
 		B5E77FE0249662E0000DD642 /* ErrorMeaningVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FDF249662E0000DD642 /* ErrorMeaningVMTests.swift */; };
+		B5EB4FB62496646600D465FF /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FE12496638C000DD642 /* BaseVC.swift */; };
+		B5EB4FB92496650300D465FF /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB4FB82496650300D465FF /* EmptyView.swift */; };
+		B5EB4FBD249678A900D465FF /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB4FBC249678A900D465FF /* UISearchBar+Extension.swift */; };
+		B5EB4FBF24967C1200D465FF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB4FBE24967C1200D465FF /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +114,10 @@
 		B5E77FDB24966257000DD642 /* EmptyMeaningVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMeaningVMTests.swift; sourceTree = "<group>"; };
 		B5E77FDD24966271000DD642 /* MockMeaningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMeaningVC.swift; sourceTree = "<group>"; };
 		B5E77FDF249662E0000DD642 /* ErrorMeaningVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMeaningVMTests.swift; sourceTree = "<group>"; };
+		B5E77FE12496638C000DD642 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		B5EB4FB82496650300D465FF /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		B5EB4FBC249678A900D465FF /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
+		B5EB4FBE24967C1200D465FF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		BB72F9045B0A07CEF310419A /* Pods-SkyEngTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTest.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				B54D25F92493CA1700FE314E /* ScrollVC.swift */,
+				B5E77FE12496638C000DD642 /* BaseVC.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 		B5B301E724939E740086FFC8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B5EB4FB7249664F600D465FF /* UI */,
 				B54D25F82493CA0C00FE314E /* Base */,
 				B54D25F42493C37C00FE314E /* Meaning */,
 				B54D25F32493C36A00FE314E /* Translate */,
@@ -338,6 +348,16 @@
 				B5E77FDF249662E0000DD642 /* ErrorMeaningVMTests.swift */,
 			);
 			name = MeaningVM;
+			sourceTree = "<group>";
+		};
+		B5EB4FB7249664F600D465FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB4FB82496650300D465FF /* EmptyView.swift */,
+				B5EB4FBC249678A900D465FF /* UISearchBar+Extension.swift */,
+				B5EB4FBE24967C1200D465FF /* UIImage+Extension.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,7 +526,9 @@
 				B54D25F62493C3A200FE314E /* MeaningVC.swift in Sources */,
 				B5B301D1249399170086FFC8 /* AppDelegate.swift in Sources */,
 				B54D26022493CEA900FE314E /* Definition.swift in Sources */,
+				B5EB4FB62496646600D465FF /* BaseVC.swift in Sources */,
 				B54D25FE2493CDA800FE314E /* Properties.swift in Sources */,
+				B5EB4FBD249678A900D465FF /* UISearchBar+Extension.swift in Sources */,
 				B54D26042493CEE000FE314E /* Example.swift in Sources */,
 				B54D260D2494001000FE314E /* Constants.swift in Sources */,
 				B54D261F2494ECB900FE314E /* MeaningVM.swift in Sources */,
@@ -516,6 +538,7 @@
 				B5B302032493AD440086FFC8 /* Word.swift in Sources */,
 				B54D26002493CE7400FE314E /* Image.swift in Sources */,
 				B54D26062493CF3800FE314E /* SimilarMeaning.swift in Sources */,
+				B5EB4FB92496650300D465FF /* EmptyView.swift in Sources */,
 				B54D26082493CF9C00FE314E /* AlternativeTranslation.swift in Sources */,
 				B5B301F42493A8AB0086FFC8 /* Configuration.swift in Sources */,
 				B5B301FF2493AC940086FFC8 /* Meaning.swift in Sources */,
@@ -525,6 +548,7 @@
 				B54D25FC2493CD5B00FE314E /* FullMeaning.swift in Sources */,
 				B5B302052493AE080086FFC8 /* ESpeechCode.swift in Sources */,
 				B5B302072493B9550086FFC8 /* ApiClient.swift in Sources */,
+				B5EB4FBF24967C1200D465FF /* UIImage+Extension.swift in Sources */,
 				B5B301EB24939F610086FFC8 /* BaseRouter.swift in Sources */,
 				B54D25FA2493CA1700FE314E /* ScrollVC.swift in Sources */,
 				B5B301F92493A95A0086FFC8 /* API.swift in Sources */,

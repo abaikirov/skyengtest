@@ -37,6 +37,17 @@ class TranslateVMTests: XCTestCase {
     XCTAssert(networkManager.isWordsCalled)
   }
   
+  func test_loading() {
+    vc.isShowLoadingCalled = false
+    vc.isHideLoadingCalled = false
+    vc.hideLoadingExpectation = XCTestExpectation(description: "hide loading")
+    vm.search("test")
+    XCTAssert(vc.isShowLoadingCalled)
+    XCTAssert(!vc.isHideLoadingCalled)
+    wait(for: [vc.hideLoadingExpectation!], timeout: 0.5)
+    XCTAssert(vc.isHideLoadingCalled)
+  }
+  
   func test_empty() {
     vc.isEmptyCalled = false
     networkManager.isWordsCalled = false
@@ -130,10 +141,14 @@ class TranslateVMTests: XCTestCase {
 class MockTranslateVC: ITransalteVC {
   var isEmptyCalled = false
   var errorMessage: String?
+  var isHideEmptyCalled = false
+  var isShowLoadingCalled = false
+  var isHideLoadingCalled = false
   
   var updateWordsExpectation: XCTestExpectation?
   var showEmptyExpectation: XCTestExpectation?
   var showErrorExpectation: XCTestExpectation?
+  var hideLoadingExpectation: XCTestExpectation?
   
   func updateWords() {
     updateWordsExpectation?.fulfill()
@@ -142,6 +157,19 @@ class MockTranslateVC: ITransalteVC {
   func showEmpty() {
     showEmptyExpectation?.fulfill()
     isEmptyCalled = true
+  }
+  
+  func hideEmpty() {
+    isHideEmptyCalled = true
+  }
+  
+  func showLoading() {
+    isShowLoadingCalled = true
+  }
+  
+  func hideLoading() {
+    hideLoadingExpectation?.fulfill()
+    isHideLoadingCalled = true
   }
   
   func showError(_ message: String) {

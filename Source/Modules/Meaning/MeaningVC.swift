@@ -147,7 +147,7 @@ extension MeaningVC: IMeaningVC {
   }
   
   func showError(_ message: String) {
-    
+    showErrorAlert(message)
   }
 }
 

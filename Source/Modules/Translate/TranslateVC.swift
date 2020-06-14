@@ -12,12 +12,19 @@ import SnapKit
 protocol ITransalteVC: class {
   func updateWords()
   func showEmpty()
+  func hideEmpty()
   func showError(_ message: String)
+  func showLoading()
+  func hideLoading()
 }
 
-class TranslateVC: UIViewController {
+class TranslateVC: BaseVC {
   private let viewModel: ITranslateVM
   private var wordsTable: UITableView!
+  private var emptyView: EmptyView?
+  private var search: UISearchController!
+  
+  private var keyboardHeight: CGFloat = 0
   
   init(_ viewModel: ITranslateVM) {
     self.viewModel = viewModel
@@ -49,12 +56,26 @@ class TranslateVC: UIViewController {
   @objc private func keyboardWillShow(_ notification: Notification) {
     let userInfo = notification.userInfo
     let frame  = userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+    keyboardHeight = frame.height
     let contentInset = UIEdgeInsets(top: 0, left: 0, bottom: frame.height, right: 0)
     wordsTable.contentInset = contentInset
+    UIView.animate(withDuration: 0.3) {
+      self.emptyView?.snp.updateConstraints({ (maker) in
+        print(self.view.safeAreaInsets.bottom)
+        maker.bottom.equalTo(self.wordsTable.snp.bottom).offset(-self.keyboardHeight + self.view.safeAreaInsets.bottom)
+      })
+      self.emptyView?.superview?.layoutIfNeeded()
+    }
   }
   
   @objc private func keyboardWillHide(_ notification: Notification) {
     wordsTable.contentInset = UIEdgeInsets.zero
+    UIView.animate(withDuration: 0.3) {
+      self.emptyView?.snp.updateConstraints({ (maker) in
+        maker.bottom.equalTo(self.wordsTable.snp.bottom).offset(0)
+      })
+      self.emptyView?.superview?.layoutIfNeeded()
+    }
   }
   
   private func setupNavigationController() {
@@ -63,7 +84,7 @@ class TranslateVC: UIViewController {
     navigationController?.navigationItem.largeTitleDisplayMode = .never
     navigationController?.navigationBar.backgroundColor = .systemGray6
     
-    let search = UISearchController(searchResultsController: nil)
+    search = UISearchController(searchResultsController: nil)
     search.searchResultsUpdater = self
     search.obscuresBackgroundDuringPresentation = false
     search.searchBar.placeholder = "Search word translate..."
@@ -137,11 +158,33 @@ extension TranslateVC: ITransalteVC {
   }
   
   func showEmpty() {
-    
+    if emptyView == nil {
+      emptyView = EmptyView()
+      view.addSubview(emptyView!)
+      emptyView!.snp.makeConstraints { (maker) in
+        maker.top.equalTo(wordsTable.snp.top)
+        maker.leading.equalTo(wordsTable.snp.leading)
+        maker.trailing.equalTo(wordsTable.snp.trailing)
+        maker.bottom.equalTo(wordsTable.snp.bottom).offset(-keyboardHeight + self.view.safeAreaInsets.bottom)
+      }
+    }
+  }
+  
+  func hideEmpty() {
+    emptyView?.removeFromSuperview()
+    emptyView = nil
+  }
+  
+  func showLoading() {
+    search.searchBar.isLoading = true
+  }
+  
+  func hideLoading() {
+    search.searchBar.isLoading = false
   }
   
   func showError(_ message: String) {
-    
+    showErrorAlert(message)
   }
 }
 

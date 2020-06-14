@@ -25,12 +25,13 @@ class TranslateVM: ITranslateVM {
       if words.isEmpty {
         translateVC?.showEmpty()
       } else {
-        translateVC?.updateWords()
+        translateVC?.hideEmpty()
       }
-      
+      translateVC?.updateWords()
     }
   }
   private var searchTimer: Timer?
+  private var lastQuery: String?
   
   var sectionsCount: Int {
     words.count
@@ -47,11 +48,18 @@ class TranslateVM: ITranslateVM {
   }
   
   func search(_ query: String?) {
-    if let query = query, !query.isEmpty {
-      searchTimer?.invalidate()
-      searchTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (timer) in
-        self.fetchWords(query)
-      })
+    if lastQuery != query {
+      lastQuery = query
+      if let query = query, !query.isEmpty {
+        translateVC?.hideEmpty()
+        translateVC?.showLoading()
+        searchTimer?.invalidate()
+        searchTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (timer) in
+          self.fetchWords(query)
+        })
+      } else {
+        words = []
+      }
     }
   }
   
@@ -65,9 +73,14 @@ class TranslateVM: ITranslateVM {
   
   private func fetchWords(_ query: String) {
     networkManager.words(query, page: nil, pageSize: nil) { (result) in
+      self.translateVC?.hideLoading()
       switch result {
       case .success(let words):
-        self.words = words
+        if self.lastQuery == "" {
+          self.words = []
+        } else {
+          self.words = words
+        }
       case .failure(let error):
         self.translateVC?.showError(error.localizedDescription)
       }

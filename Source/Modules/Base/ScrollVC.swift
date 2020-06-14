@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ScrollVC: UIViewController {
+class ScrollVC: BaseVC {
   private var scrollView: UIScrollView!
   
   override func viewDidLoad() {
