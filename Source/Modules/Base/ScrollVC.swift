@@ -25,12 +25,7 @@ class ScrollVC: BaseVC {
     scrollView.keyboardDismissMode = .onDrag
     view.addSubview(scrollView)
     scrollView.snp.makeConstraints { (maker) in
-      if #available(iOS 11.0, *) {
-        maker.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-      } else {
-        // Fallback on earlier versions
-        maker.top.equalTo(topLayoutGuide.snp.bottom)
-      }
+      maker.top.equalTo(view.safeAreaLayoutGuide.snp.top)
       maker.leading.equalTo(view.safeAreaLayoutGuide.snp.leading)
       maker.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing)
       maker.bottom.equalToSuperview()
