@@ -1,0 +1,854 @@
+[
+  {
+    "id": 217,
+    "text": "word",
+    "meanings": [
+      {
+        "id": 92160,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "слово",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/ea4f7ce85e73e44cec430fe87db3f3ce.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/ea4f7ce85e73e44cec430fe87db3f3ce.jpeg?w=640",
+        "transcription": "wɜːd",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=w%C9%9C%CB%90d&transcription=1"
+      },
+      {
+        "id": 92162,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "известие",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d6e722ff3a3d143c40aad0bdb511c121.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d6e722ff3a3d143c40aad0bdb511c121.jpeg?w=640",
+        "transcription": "wɜːd",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=word"
+      },
+      {
+        "id": 92164,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "разговор",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/04871e9722ec2653dbf4880554ba1ffe.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/04871e9722ec2653dbf4880554ba1ffe.jpeg?w=640",
+        "transcription": "wɜːd",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=word"
+      },
+      {
+        "id": 92163,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "приказ",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d33b9973d43ffba676a99824e5a3a9dc.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d33b9973d43ffba676a99824e5a3a9dc.jpeg?w=640",
+        "transcription": "wɜːd",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=word"
+      },
+      {
+        "id": 92165,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "обещание",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/a40bdca29878e1f9a0f1867a514013c3.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/a40bdca29878e1f9a0f1867a514013c3.jpeg?w=640",
+        "transcription": "wɜːd",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=word"
+      },
+      {
+        "id": 92170,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "выражать словами",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/399c9e3b65bac970eb67d576432d9747.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/399c9e3b65bac970eb67d576432d9747.jpeg?w=640",
+        "transcription": "wɜːd",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=word"
+      }
+    ]
+  },
+  {
+    "id": 3176,
+    "text": "particle",
+    "meanings": [
+      {
+        "id": 109102,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "частица",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f82defd03191e5b6af926f5a4126d5d4.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f82defd03191e5b6af926f5a4126d5d4.jpeg?w=640",
+        "transcription": "ˈpɑːtɪkl",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=particle"
+      },
+      {
+        "id": 109104,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "служебное слово",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/75188b5b5e26818ae3020b103fb8cdf9.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/75188b5b5e26818ae3020b103fb8cdf9.jpeg?w=640",
+        "transcription": "ˈpɑːtɪkl",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=particle"
+      }
+    ]
+  },
+  {
+    "id": 30159,
+    "text": "monosyllable",
+    "meanings": [
+      {
+        "id": 43055,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "односложное слово",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/95add9efb2713959df1bec7f35e6b6d3.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/95add9efb2713959df1bec7f35e6b6d3.jpeg?w=640",
+        "transcription": "ˌmɒnəˈsɪləbl",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=monosyllable"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "of",
+    "meanings": [
+      {
+        "id": 227854,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на принадлежность",
+          "note": "передаётся родительным падежом"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d26a6ca8be058f8ac85b1133d7c95d19.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d26a6ca8be058f8ac85b1133d7c95d19.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=%C9%92v&transcription=1"
+      },
+      {
+        "id": 241428,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на авторство или деятеля",
+          "note": "передаётся родительным падежом"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/c9a19c01083185228c636e8d086f5c37.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/c9a19c01083185228c636e8d086f5c37.png?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 236558,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на определённое количество чего-либо в какой-либо ёмкости",
+          "note": "передаётся родительным падежом"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/047e8e2e9e7d42f75e4d9f4bf8b267c5.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/047e8e2e9e7d42f75e4d9f4bf8b267c5.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 236557,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "используется после слов, обозначающих количество",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/3f8de1b09740a12b9e66c0c0cef9775e.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/3f8de1b09740a12b9e66c0c0cef9775e.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 235159,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на отношение конкретного понятия к более обширной категории",
+          "note": "передаётся родительным падежом"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/65e827c7ee333d5d58c03597086f4afc.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/65e827c7ee333d5d58c03597086f4afc.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 236097,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на соотношение части и целого",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f34cb411cc600cff9aa62fc818cef3e9.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f34cb411cc600cff9aa62fc818cef3e9.png?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 236096,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на местоположение относительно чего-либо",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/9ca528309e5f2c2ed848c01247ad66fc.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/9ca528309e5f2c2ed848c01247ad66fc.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 240228,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "о",
+          "note": "указывает на тему разговора, рассуждений"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/bc19486f6b17eee0747de1fa3b067c97.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/bc19486f6b17eee0747de1fa3b067c97.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 236559,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "используется с датами и возрастом",
+          "note": "передаётся родительным падежом"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/e83781420a10c4cd8f4cecc4ac24b651.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/e83781420a10c4cd8f4cecc4ac24b651.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=%C9%92v&transcription=1"
+      },
+      {
+        "id": 238686,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "с чьей-либо стороны",
+          "note": "следует после прилагательного"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/81b611c40c8d4821c9cb1516a0f20fa0.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/81b611c40c8d4821c9cb1516a0f20fa0.png?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 236098,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "из",
+          "note": "употребляется после превосходной степени прилагательного"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/807db129434e324e5cb668c42e95711d.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/807db129434e324e5cb668c42e95711d.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=%C9%92v&transcription=1"
+      },
+      {
+        "id": 254101,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "в",
+          "note": "какое-либо количество"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/b3af1c8175fe916189bfb20259e114c4.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/b3af1c8175fe916189bfb20259e114c4.jpeg?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      },
+      {
+        "id": 237064,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "от",
+          "note": "указывает на причину"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/91859568a6c1845940c9d843f9a16aef.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/91859568a6c1845940c9d843f9a16aef.png?w=640",
+        "transcription": "ɒv",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=of"
+      }
+    ]
+  },
+  {
+    "id": 167302,
+    "text": "Mark my words!",
+    "meanings": [
+      {
+        "id": 237869,
+        "partOfSpeechCode": "ph",
+        "translation": {
+          "text": "Помяни моё слово!",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/a76bbbf3e6f6d8798abc4e36054e01a4.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/a76bbbf3e6f6d8798abc4e36054e01a4.png?w=640",
+        "transcription": "mɑːk ˈsʌmbədiz wɜːd",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=Mark+my+words%21"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "for",
+    "meanings": [
+      {
+        "id": 235936,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "для",
+          "note": "используется для указания на несоответствие явления, события или качества кому-либо или чему-либо"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/246e5e330e5b387c1952de8e55b3d980.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/246e5e330e5b387c1952de8e55b3d980.jpeg?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 235943,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на исполнителя или адресата действия, выраженного глаголом в инфинитиве",
+          "note": "в сочетаниях с инфинитивным оборотом"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/3aaa139f46aceac66dc01a21a40de4f1.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/3aaa139f46aceac66dc01a21a40de4f1.png?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 235939,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "на",
+          "note": "указывает на направление"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/661af292b6ce36f4e7e173ac00206e9a.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/661af292b6ce36f4e7e173ac00206e9a.png?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 227857,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "для",
+          "note": "указывает на адресата действия"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/adcbcf16e8c6d2c12616ccb185e6f131.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/adcbcf16e8c6d2c12616ccb185e6f131.jpeg?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 233515,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на продолжительность какого-либо действия или ситуации",
+          "note": "может опускаться при переводе на русский язык"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/694b620d2723abfadfea248cc645b25a.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/694b620d2723abfadfea248cc645b25a.jpeg?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 235935,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "из-за",
+          "note": "указывает на причину чего-либо"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f1dba227dd318793c0527bdf42040483.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f1dba227dd318793c0527bdf42040483.jpeg?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 238953,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "на",
+          "note": "праздник, годовщину и т. д.; указывает на особый повод, к которому приурочено действие"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/2151d0c4ed4a6b5acf5dada66820a861.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/2151d0c4ed4a6b5acf5dada66820a861.png?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 235944,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "за",
+          "note": "в поддержку кого-либо или чего-либо"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d013b1e8d1fff72c61fa976f9fa6bc14.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d013b1e8d1fff72c61fa976f9fa6bc14.jpeg?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 235937,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "указывает на значение слова или символа",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/4f73a7ccf84ce59940077403446d615b.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/4f73a7ccf84ce59940077403446d615b.jpeg?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 235934,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "за",
+          "note": "указывает на цену, стоимость чего-либо"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/287059a3b143ef8833ad2a3b409f2326.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/287059a3b143ef8833ad2a3b409f2326.jpeg?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 238954,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "на",
+          "note": "указывает на время события"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/a9de38d490a2471ae657bc68d0794c54.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/a9de38d490a2471ae657bc68d0794c54.png?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 237091,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "на",
+          "note": "указывает на место работы, нанимателя"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/ecc426e7b60f27d5b13b1d5727f56aa8.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/ecc426e7b60f27d5b13b1d5727f56aa8.png?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 235942,
+        "partOfSpeechCode": "prp",
+        "translation": {
+          "text": "для",
+          "note": "указывает на цель действия"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/4d187afc01a9de2e0f38da942a54b02f.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/4d187afc01a9de2e0f38da942a54b02f.png?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      },
+      {
+        "id": 253734,
+        "partOfSpeechCode": "cjc",
+        "translation": {
+          "text": "так как",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/051400429dce589580970de3abbc3e9d.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/051400429dce589580970de3abbc3e9d.png?w=640",
+        "transcription": "fɔː",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=for"
+      }
+    ]
+  },
+  {
+    "id": 4172,
+    "text": "slot",
+    "meanings": [
+      {
+        "id": 87634,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "место слова",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/a9f3d8b7489610960d845fe899fc8dad.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/a9f3d8b7489610960d845fe899fc8dad.jpeg?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 87635,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "слот",
+          "note": "отверстие"
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/931c3174b359e78e0e09ce37c40b274d.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/931c3174b359e78e0e09ce37c40b274d.jpeg?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 87636,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "расписание",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/78eddbc193717b2e546bab60e243ebd9.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/78eddbc193717b2e546bab60e243ebd9.png?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 240307,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "определенное время",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/e9fd27b01722407cf739bad2d7f5fce2.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/e9fd27b01722407cf739bad2d7f5fce2.jpeg?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 87640,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "игровой автомат",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f9b084709550e0167772a5805d471f4f.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f9b084709550e0167772a5805d471f4f.jpeg?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 87639,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "слот",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/b5d5542b2c35bc6eb9e148f3136cc2e2.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/b5d5542b2c35bc6eb9e148f3136cc2e2.png?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 240306,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "щель",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/07d637a995da4b3a3ff1bb5fc266c24f.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/07d637a995da4b3a3ff1bb5fc266c24f.jpeg?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 87637,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "надлежащее место",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/06c369e35eaed10997d61aaf5cb559f5.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/06c369e35eaed10997d61aaf5cb559f5.jpeg?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 87638,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "след",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/4fe8fa715e2e8219c16771f7db382764.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/4fe8fa715e2e8219c16771f7db382764.jpeg?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      },
+      {
+        "id": 87641,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "вставить в график",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/39e0cab78a88ddb222e1e9833c3f5a9f.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/39e0cab78a88ddb222e1e9833c3f5a9f.jpeg?w=640",
+        "transcription": "slɒt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=slot"
+      }
+    ]
+  },
+  {
+    "id": 2591,
+    "text": "briefly",
+    "meanings": [
+      {
+        "id": 195249,
+        "partOfSpeechCode": "r",
+        "translation": {
+          "text": "недолго",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/49ab5e1a0e1b399ae2ae0e84f96a07ed.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/49ab5e1a0e1b399ae2ae0e84f96a07ed.png?w=640",
+        "transcription": "ˈbriːfli",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=briefly"
+      },
+      {
+        "id": 195250,
+        "partOfSpeechCode": "r",
+        "translation": {
+          "text": "в двух словах",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/c123df8dd27bfbf2cd8c8b12b747c610.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/c123df8dd27bfbf2cd8c8b12b747c610.jpeg?w=640",
+        "transcription": "ˈbriːfli",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=briefly"
+      }
+    ]
+  },
+  {
+    "id": 1527,
+    "text": "root",
+    "meanings": [
+      {
+        "id": 14791,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "корень",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/b0b60af61be82671241b359257c98de2.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/b0b60af61be82671241b359257c98de2.png?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14793,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "корень слова",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/dcfc8a1fdddb01339c50d4703022a139.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/dcfc8a1fdddb01339c50d4703022a139.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14792,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "источник",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/b9d5e9f63db3099cfefd9e6990687406.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/b9d5e9f63db3099cfefd9e6990687406.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14794,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "корень",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/1a31900779fe25440eb3f82dcfe9b260.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/1a31900779fe25440eb3f82dcfe9b260.png?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14795,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "основание",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f28ab54c565770079c115ef900bdfe5d.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f28ab54c565770079c115ef900bdfe5d.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14798,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "корень зуба",
+          "note": ""
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f1c04356cc0d0693dc78b23009a4d861.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f1c04356cc0d0693dc78b23009a4d861.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14796,
+        "partOfSpeechCode": "n",
+        "translation": {
+          "text": "предок",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f05744956e468349a9d9f9259ae41512.png?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/f05744956e468349a9d9f9259ae41512.png?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14799,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "пускать корни",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/7bc6480dcf7d90d0cc6b36264071608d.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/7bc6480dcf7d90d0cc6b36264071608d.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14802,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "рыть землю",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/9643b0411167b20160149b3b7a25fd6f.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/9643b0411167b20160149b3b7a25fd6f.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14804,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "пускать корни",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/0a2a322bbcc5f0a41f323a61cae01089.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/0a2a322bbcc5f0a41f323a61cae01089.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14801,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "укореняться",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/c5f32ee8caec1ab850b5e7020ccc92cf.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/c5f32ee8caec1ab850b5e7020ccc92cf.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14800,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "корениться",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/2e92d90c813b97e4ab9ff7fa158f8518.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/2e92d90c813b97e4ab9ff7fa158f8518.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      },
+      {
+        "id": 14803,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "укореняться",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d7552629c6c6a9996de23b7dd2e48b2d.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d7552629c6c6a9996de23b7dd2e48b2d.jpeg?w=640",
+        "transcription": "ruːt",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=root"
+      }
+    ]
+  },
+  {
+    "id": 8170,
+    "text": "transcribe",
+    "meanings": [
+      {
+        "id": 11473,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "записывать со слов",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/c83e6cb2a5fd1740fb9fabc0a2780469.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/c83e6cb2a5fd1740fb9fabc0a2780469.jpeg?w=640",
+        "transcription": "trænsˈkraɪb",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=transcribe"
+      },
+      {
+        "id": 11474,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "переписывать",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d6c584a550b48cbc0e5bc52c3e25a8ac.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/d6c584a550b48cbc0e5bc52c3e25a8ac.jpeg?w=640",
+        "transcription": "trænsˈkraɪb",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=transcribe"
+      },
+      {
+        "id": 11476,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "транскрибировать",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/279baf0cb15b06f3436ae475ebb61e06.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/279baf0cb15b06f3436ae475ebb61e06.jpeg?w=640",
+        "transcription": "trænsˈkraɪb",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=transcribe"
+      },
+      {
+        "id": 11475,
+        "partOfSpeechCode": "v",
+        "translation": {
+          "text": "аранжировать",
+          "note": null
+        },
+        "previewUrl": "//d2zkmv5t5kao9.cloudfront.net/images/ac8b8b613d8fbb8770438a3aed3de810.jpeg?w=96",
+        "imageUrl": "//d2zkmv5t5kao9.cloudfront.net/images/ac8b8b613d8fbb8770438a3aed3de810.jpeg?w=640",
+        "transcription": "trænsˈkraɪb",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=transcribe"
+      }
+    ]
+  },
+]

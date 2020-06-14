@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 protocol INetworkManager {
-  func words(_ search: String, page: Int?, pageSize: Int?, complition: @escaping (Result<[Word], Error>) -> Void)
+  func words(_ search: String, page: Int?, pageSize: Int?, completion: @escaping (Result<[Word], Error>) -> Void)
   func meanings(_ meaningIds: [Int], from date: Date, completion: @escaping(Result<[FullMeaning], Error>) -> Void)
 }
 
@@ -18,15 +18,14 @@ class NetworkManager: INetworkManager {
   func meanings(_ meaningIds: [Int], from date: Date, completion: @escaping (Result<[FullMeaning], Error>) -> Void) {
     var ids = meaningIds.reduce("") { res, id in "\(res),\(id)" }
     ids.remove(at: ids.startIndex)
-    request(RMeanings(ids: ids, updatedAt: date), complition: completion)
+    request(RMeanings(ids: ids, updatedAt: date), completion: completion)
   }
   
-  func words(_ search: String, page: Int?, pageSize: Int?, complition: @escaping (Result<[Word], Error>) -> Void) {
-    request(RWords(search: search, page: page, pageSize: pageSize), complition: complition)
+  func words(_ search: String, page: Int?, pageSize: Int?, completion: @escaping (Result<[Word], Error>) -> Void) {
+    request(RWords(search: search, page: page, pageSize: pageSize), completion: completion)
   }
   
-  private func request<T: Decodable>(_ request: BaseRequest, complition: @escaping (Result<T, Error>) -> Void) {
-    print(request.asUrlRequest().urlRequest?.url)
+  private func request<T: Decodable>(_ request: BaseRequest, completion: @escaping (Result<T, Error>) -> Void) {    
     ApiClient.request(request) { (response) in
       switch response.result {
       case .success(let data):
@@ -34,12 +33,12 @@ class NetworkManager: INetworkManager {
           let decoder = JSONDecoder()
           decoder.dateDecodingStrategy = .formatted(SEDateFormatter())
           let decoded = try decoder.decode(T.self, from: data)
-          complition(.success(decoded))
+          completion(.success(decoded))
         } catch {
-          complition(.failure(error))
+          completion(.failure(error))
         }
       case .failure(let error):
-        complition(.failure(error))
+        completion(.failure(error))
       }
     }
   }

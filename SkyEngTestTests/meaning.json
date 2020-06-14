@@ -1,0 +1,253 @@
+[
+  {
+    "id": "92160",
+    "wordId": 217,
+    "difficultyLevel": 1,
+    "partOfSpeechCode": "n",
+    "prefix": "a",
+    "text": "word",
+    "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=w%C9%9C%CB%90d&transcription=1",
+    "transcription": "wɜːd",
+    "properties": {
+      "collocation": false,
+      "countability": "c",
+      "irregularPlural": false,
+      "falseFriends": []
+    },
+    "updatedAt": "2020-06-05 20:19:39",
+    "mnemonics": null,
+    "translation": {
+      "text": "слово",
+      "note": null
+    },
+    "images": [
+      {
+        "url": "//d2zkmv5t5kao9.cloudfront.net/images/ea4f7ce85e73e44cec430fe87db3f3ce.jpeg?w=200&q=50"
+      }
+    ],
+    "definition": {
+      "text": "A single group of letters that are used together with a particular meaning.",
+      "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=a+single+group+of+letters+that+are+used+together+with+a+particular+meaning"
+    },
+    "examples": [
+      {
+        "text": "Some [words] are more difficult to spell than others.",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=Some+words+are+more+difficult+to+spell+than+others."
+      },
+      {
+        "text": "Perhaps 'lucky' is not exactly the right [word].",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=Perhaps+%27lucky%27+is+not+exactly+the+right+word."
+      },
+      {
+        "text": "He hardly said ten [words] all morning.",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=He+hardly+said+ten+words+all+morning."
+      },
+      {
+        "text": "Your essay should be no more than two thousand [words] long.",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=Your+essay+should+be+no+more+than+two+thousand+words+long."
+      },
+      {
+        "text": "[Words] are the blocks from which sentences are made.",
+        "soundUrl": "//d2fmfepycn0xw0.cloudfront.net?gender=male&accent=british&text=Words+are+the+blocks+from+which+sentences+are+made."
+      }
+    ],
+    "meaningsWithSimilarTranslation": [
+      {
+        "meaningId": 92160,
+        "frequencyPercent": "90.3",
+        "partOfSpeechAbbreviation": "сущ.",
+        "translation": {
+          "text": "слово",
+          "note": null
+        }
+      },
+      {
+        "meaningId": 92162,
+        "frequencyPercent": "3.9",
+        "partOfSpeechAbbreviation": "сущ.",
+        "translation": {
+          "text": "известие",
+          "note": null
+        }
+      },
+      {
+        "meaningId": 92163,
+        "frequencyPercent": "2.3",
+        "partOfSpeechAbbreviation": "сущ.",
+        "translation": {
+          "text": "приказ",
+          "note": ""
+        }
+      },
+      {
+        "meaningId": 92164,
+        "frequencyPercent": "2.3",
+        "partOfSpeechAbbreviation": "сущ.",
+        "translation": {
+          "text": "разговор",
+          "note": null
+        }
+      },
+      {
+        "meaningId": 92165,
+        "frequencyPercent": "0.8",
+        "partOfSpeechAbbreviation": "сущ.",
+        "translation": {
+          "text": "обещание",
+          "note": null
+        }
+      },
+      {
+        "meaningId": 92170,
+        "frequencyPercent": "0.4",
+        "partOfSpeechAbbreviation": "гл.",
+        "translation": {
+          "text": "выражать словами",
+          "note": null
+        }
+      }
+    ],
+    "alternativeTranslations": [
+      {
+        "text": "minute",
+        "translation": {
+          "text": "минута",
+          "note": null
+        }
+      },
+      {
+        "text": "boy",
+        "translation": {
+          "text": "мальчик",
+          "note": null
+        }
+      },
+      {
+        "text": "policy",
+        "translation": {
+          "text": "политика ",
+          "note": null
+        }
+      },
+      {
+        "text": "data",
+        "translation": {
+          "text": "данные",
+          "note": null
+        }
+      },
+      {
+        "text": "email",
+        "translation": {
+          "text": "электронная почта",
+          "note": ""
+        }
+      },
+      {
+        "text": "member",
+        "translation": {
+          "text": "член",
+          "note": "организации, предприятия и т. д."
+        }
+      },
+      {
+        "text": "son",
+        "translation": {
+          "text": "сын",
+          "note": null
+        }
+      },
+      {
+        "text": "decade",
+        "translation": {
+          "text": "десятилетие",
+          "note": null
+        }
+      },
+      {
+        "text": "month",
+        "translation": {
+          "text": "месяц",
+          "note": null
+        }
+      },
+      {
+        "text": "office",
+        "translation": {
+          "text": "офис",
+          "note": null
+        }
+      },
+      {
+        "text": "effect",
+        "translation": {
+          "text": "эффект",
+          "note": null
+        }
+      },
+      {
+        "text": "hour",
+        "translation": {
+          "text": "час",
+          "note": null
+        }
+      },
+      {
+        "text": "world",
+        "translation": {
+          "text": "жизнь",
+          "note": "отдельного человека"
+        }
+      },
+      {
+        "text": "party",
+        "translation": {
+          "text": "партия",
+          "note": ""
+        }
+      },
+      {
+        "text": "nation",
+        "translation": {
+          "text": "государство",
+          "note": null
+        }
+      },
+      {
+        "text": "dog",
+        "translation": {
+          "text": "собака",
+          "note": null
+        }
+      },
+      {
+        "text": "water",
+        "translation": {
+          "text": "вода",
+          "note": null
+        }
+      },
+      {
+        "text": "day",
+        "translation": {
+          "text": "день",
+          "note": "дата"
+        }
+      },
+      {
+        "text": "tax",
+        "translation": {
+          "text": "налог",
+          "note": null
+        }
+      },
+      {
+        "text": "Moscow",
+        "translation": {
+          "text": "Москва",
+          "note": null
+        }
+      }
+    ]
+  }
+]

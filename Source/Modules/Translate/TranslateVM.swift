@@ -22,7 +22,12 @@ class TranslateVM: ITranslateVM {
   private let networkManager: INetworkManager
   private var words: [Word] = [] {
     didSet {
-      translateVC?.updateWords()
+      if words.isEmpty {
+        translateVC?.showEmpty()
+      } else {
+        translateVC?.updateWords()
+      }
+      
     }
   }
   private var searchTimer: Timer?
@@ -64,7 +69,7 @@ class TranslateVM: ITranslateVM {
       case .success(let words):
         self.words = words
       case .failure(let error):
-        print(error)
+        self.translateVC?.showError(error.localizedDescription)
       }
     }
   }

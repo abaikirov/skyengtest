@@ -11,6 +11,8 @@ import SnapKit
 
 protocol ITransalteVC: class {
   func updateWords()
+  func showEmpty()
+  func showError(_ message: String)
 }
 
 class TranslateVC: UIViewController {
@@ -132,6 +134,14 @@ extension TranslateVC: UISearchResultsUpdating {
 extension TranslateVC: ITransalteVC {
   func updateWords() {
     wordsTable.reloadData()
+  }
+  
+  func showEmpty() {
+    
+  }
+  
+  func showError(_ message: String) {
+    
   }
 }
 

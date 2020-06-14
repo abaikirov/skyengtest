@@ -23,6 +23,7 @@
 		B54D26152494D61900FE314E /* SkyEngTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D26142494D61900FE314E /* SkyEngTestTests.swift */; };
 		B54D261D2494E7A700FE314E /* TranslateVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D261C2494E7A700FE314E /* TranslateVM.swift */; };
 		B54D261F2494ECB900FE314E /* MeaningVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D261E2494ECB900FE314E /* MeaningVM.swift */; };
+		B54D26212494F16E00FE314E /* TransalateVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D26202494F16E00FE314E /* TransalateVMTests.swift */; };
 		B5B301D1249399170086FFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301D0249399170086FFC8 /* AppDelegate.swift */; };
 		B5B301D3249399170086FFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B301D2249399170086FFC8 /* SceneDelegate.swift */; };
 		B5B301DA249399190086FFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B301D9249399190086FFC8 /* Assets.xcassets */; };
@@ -39,6 +40,8 @@
 		B5B302032493AD440086FFC8 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302022493AD440086FFC8 /* Word.swift */; };
 		B5B302052493AE080086FFC8 /* ESpeechCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302042493AE080086FFC8 /* ESpeechCode.swift */; };
 		B5B302072493B9550086FFC8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302062493B9550086FFC8 /* ApiClient.swift */; };
+		B5E77FCE24964D4A000DD642 /* meaning.json in Resources */ = {isa = PBXBuildFile; fileRef = B5E77FCC24964D49000DD642 /* meaning.json */; };
+		B5E77FCF24964D4A000DD642 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = B5E77FCD24964D49000DD642 /* words.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,7 @@
 		B54D26162494D61900FE314E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54D261C2494E7A700FE314E /* TranslateVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateVM.swift; sourceTree = "<group>"; };
 		B54D261E2494ECB900FE314E /* MeaningVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningVM.swift; sourceTree = "<group>"; };
+		B54D26202494F16E00FE314E /* TransalateVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransalateVMTests.swift; sourceTree = "<group>"; };
 		B5B301CD249399170086FFC8 /* SkyEngTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B301D0249399170086FFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B301D2249399170086FFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		B5B302022493AD440086FFC8 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		B5B302042493AE080086FFC8 /* ESpeechCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESpeechCode.swift; sourceTree = "<group>"; };
 		B5B302062493B9550086FFC8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		B5E77FCC24964D49000DD642 /* meaning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meaning.json; sourceTree = "<group>"; };
+		B5E77FCD24964D49000DD642 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		BB72F9045B0A07CEF310419A /* Pods-SkyEngTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTest.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,8 +176,10 @@
 		B54D26132494D61900FE314E /* SkyEngTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5E77FD024964D53000DD642 /* Response */,
 				B54D26142494D61900FE314E /* SkyEngTestTests.swift */,
 				B54D26162494D61900FE314E /* Info.plist */,
+				B54D26202494F16E00FE314E /* TransalateVMTests.swift */,
 			);
 			path = SkyEngTestTests;
 			sourceTree = "<group>";
@@ -289,6 +297,15 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		B5E77FD024964D53000DD642 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				B5E77FCC24964D49000DD642 /* meaning.json */,
+				B5E77FCD24964D49000DD642 /* words.json */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,6 +389,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E77FCE24964D4A000DD642 /* meaning.json in Resources */,
+				B5E77FCF24964D4A000DD642 /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54D26152494D61900FE314E /* SkyEngTestTests.swift in Sources */,
+				B54D26212494F16E00FE314E /* TransalateVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
