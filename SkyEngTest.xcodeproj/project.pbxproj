@@ -42,6 +42,12 @@
 		B5B302072493B9550086FFC8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B302062493B9550086FFC8 /* ApiClient.swift */; };
 		B5E77FCE24964D4A000DD642 /* meaning.json in Resources */ = {isa = PBXBuildFile; fileRef = B5E77FCC24964D49000DD642 /* meaning.json */; };
 		B5E77FCF24964D4A000DD642 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = B5E77FCD24964D49000DD642 /* words.json */; };
+		B5E77FD424965C34000DD642 /* MeaningVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FD324965C34000DD642 /* MeaningVMTests.swift */; };
+		B5E77FD624965C6B000DD642 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FD524965C6B000DD642 /* MockError.swift */; };
+		B5E77FD924965CB9000DD642 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FD824965CB9000DD642 /* MockNetworkManager.swift */; };
+		B5E77FDC24966257000DD642 /* EmptyMeaningVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FDB24966257000DD642 /* EmptyMeaningVMTests.swift */; };
+		B5E77FDE24966271000DD642 /* MockMeaningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FDD24966271000DD642 /* MockMeaningVC.swift */; };
+		B5E77FE0249662E0000DD642 /* ErrorMeaningVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E77FDF249662E0000DD642 /* ErrorMeaningVMTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +104,12 @@
 		B5B302062493B9550086FFC8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B5E77FCC24964D49000DD642 /* meaning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meaning.json; sourceTree = "<group>"; };
 		B5E77FCD24964D49000DD642 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		B5E77FD324965C34000DD642 /* MeaningVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningVMTests.swift; sourceTree = "<group>"; };
+		B5E77FD524965C6B000DD642 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		B5E77FD824965CB9000DD642 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		B5E77FDB24966257000DD642 /* EmptyMeaningVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMeaningVMTests.swift; sourceTree = "<group>"; };
+		B5E77FDD24966271000DD642 /* MockMeaningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMeaningVC.swift; sourceTree = "<group>"; };
+		B5E77FDF249662E0000DD642 /* ErrorMeaningVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMeaningVMTests.swift; sourceTree = "<group>"; };
 		BB72F9045B0A07CEF310419A /* Pods-SkyEngTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTest.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngTest/Pods-SkyEngTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +188,8 @@
 		B54D26132494D61900FE314E /* SkyEngTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5E77FDA2496622B000DD642 /* MeaningVM */,
+				B5E77FD724965C84000DD642 /* Mocks */,
 				B5E77FD024964D53000DD642 /* Response */,
 				B54D26142494D61900FE314E /* SkyEngTestTests.swift */,
 				B54D26162494D61900FE314E /* Info.plist */,
@@ -304,6 +318,26 @@
 				B5E77FCD24964D49000DD642 /* words.json */,
 			);
 			name = Response;
+			sourceTree = "<group>";
+		};
+		B5E77FD724965C84000DD642 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B5E77FD524965C6B000DD642 /* MockError.swift */,
+				B5E77FD824965CB9000DD642 /* MockNetworkManager.swift */,
+				B5E77FDD24966271000DD642 /* MockMeaningVC.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B5E77FDA2496622B000DD642 /* MeaningVM */ = {
+			isa = PBXGroup;
+			children = (
+				B5E77FD324965C34000DD642 /* MeaningVMTests.swift */,
+				B5E77FDB24966257000DD642 /* EmptyMeaningVMTests.swift */,
+				B5E77FDF249662E0000DD642 /* ErrorMeaningVMTests.swift */,
+			);
+			name = MeaningVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,8 +486,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E77FDC24966257000DD642 /* EmptyMeaningVMTests.swift in Sources */,
+				B5E77FDE24966271000DD642 /* MockMeaningVC.swift in Sources */,
+				B5E77FD624965C6B000DD642 /* MockError.swift in Sources */,
+				B5E77FE0249662E0000DD642 /* ErrorMeaningVMTests.swift in Sources */,
+				B5E77FD424965C34000DD642 /* MeaningVMTests.swift in Sources */,
 				B54D26152494D61900FE314E /* SkyEngTestTests.swift in Sources */,
 				B54D26212494F16E00FE314E /* TransalateVMTests.swift in Sources */,
+				B5E77FD924965CB9000DD642 /* MockNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

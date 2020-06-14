@@ -35,11 +35,12 @@ class MeaningVM: IMeaningVM {
       switch result {
       case .success(let meanings):
         guard let fullMeaning = meanings.first else {
+          self.meaningVC?.showEmpty()
           return
         }
         self.meaningVC?.showMeaning(fullMeaning)
       case .failure(let error):
-        print(error)
+        self.meaningVC?.showError(error.localizedDescription)
       }
     }
   }

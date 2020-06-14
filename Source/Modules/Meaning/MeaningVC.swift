@@ -12,6 +12,8 @@ import ShimmerSwift
 
 protocol IMeaningVC: class {
   func showMeaning(_ fullMeaning: FullMeaning)
+  func showEmpty()
+  func showError(_ message: String)
 }
 
 class MeaningVC: ScrollVC {
@@ -138,6 +140,14 @@ extension MeaningVC: IMeaningVC {
     fullMeaning.examples.forEach { (example) in
       examplesStack.addArrangedSubview(getExampleLabel(example.text))
     }
+  }
+  
+  func showEmpty() {
+    
+  }
+  
+  func showError(_ message: String) {
+    
   }
 }
 

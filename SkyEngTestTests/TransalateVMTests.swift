@@ -149,33 +149,3 @@ class MockTranslateVC: ITransalteVC {
     errorMessage = message
   }
 }
-
-class MockNetworkManager: INetworkManager {
-  var isWordsCalled = false
-  
-  func words(_ search: String, page: Int?, pageSize: Int?, completion: @escaping (Result<[Word], Error>) -> Void) {
-    isWordsCalled = true
-    if search == "empty" {
-      completion(.success([]))
-    } else if search == "error" {
-      completion(.failure(TestError.network))
-    } else {
-      let path = Bundle(for: type(of: self)).path(forResource: "words", ofType: "json")!
-      let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-      let decoder = JSONDecoder()
-      decoder.dateDecodingStrategy = .formatted(SEDateFormatter())
-      let words = try! decoder.decode([Word].self, from: data)
-      completion(.success(words))
-    }
-  }
-  
-  func meanings(_ meaningIds: [Int], from date: Date, completion: @escaping (Result<[FullMeaning], Error>) -> Void) {}
-}
-
-enum TestError: LocalizedError {
-  case network
-  
-  var errorDescription: String? {
-    "network"
-  }
-}
