@@ -9,6 +9,17 @@
 import UIKit
 
 class EmptyView: UIView {
+  private var label: UILabel!
+  
+  var text: String? {
+    set {
+      label.text = newValue
+    }
+    get {
+      label.text
+    }
+  }
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupView()
@@ -21,7 +32,8 @@ class EmptyView: UIView {
   private func setupView() {
     backgroundColor = .systemBackground
     
-    let label = UILabel()
+    label = UILabel()
+    label.numberOfLines = 0
     label.text = "Nothing found"
     label.textAlignment = .center
     label.textColor = .systemGray5

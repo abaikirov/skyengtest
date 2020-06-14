@@ -51,14 +51,13 @@ class TranslateVM: ITranslateVM {
     if lastQuery != query {
       lastQuery = query
       if let query = query, !query.isEmpty {
-        translateVC?.hideEmpty()
         translateVC?.showLoading()
         searchTimer?.invalidate()
         searchTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (timer) in
           self.fetchWords(query)
         })
       } else {
-        words = []
+        translateVC?.showStartView()
       }
     }
   }
@@ -77,7 +76,7 @@ class TranslateVM: ITranslateVM {
       switch result {
       case .success(let words):
         if self.lastQuery == "" {
-          self.words = []
+          self.translateVC?.showStartView()
         } else {
           self.words = words
         }

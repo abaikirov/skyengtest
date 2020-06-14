@@ -16,6 +16,7 @@ protocol ITransalteVC: class {
   func showError(_ message: String)
   func showLoading()
   func hideLoading()
+  func showStartView()
 }
 
 class TranslateVC: BaseVC {
@@ -45,6 +46,7 @@ class TranslateVC: BaseVC {
     setupKeyboardListener()
     setupNavigationController()
     setupWordsTable()
+    showStartView()
   }
   
   private func setupKeyboardListener() {
@@ -61,7 +63,6 @@ class TranslateVC: BaseVC {
     wordsTable.contentInset = contentInset
     UIView.animate(withDuration: 0.3) {
       self.emptyView?.snp.updateConstraints({ (maker) in
-        print(self.view.safeAreaInsets.bottom)
         maker.bottom.equalTo(self.wordsTable.snp.bottom).offset(-self.keyboardHeight + self.view.safeAreaInsets.bottom)
       })
       self.emptyView?.superview?.layoutIfNeeded()
@@ -87,7 +88,7 @@ class TranslateVC: BaseVC {
     search = UISearchController(searchResultsController: nil)
     search.searchResultsUpdater = self
     search.obscuresBackgroundDuringPresentation = false
-    search.searchBar.placeholder = "Search word translate..."
+    search.searchBar.placeholder = "Search for translates..."
     navigationItem.searchController = search
     
     definesPresentationContext = true
@@ -102,6 +103,20 @@ class TranslateVC: BaseVC {
     wordsTable.snp.makeConstraints { (maker) in
       maker.edges.equalTo(view.safeAreaLayoutGuide.snp.edges)
     }
+  }
+  
+  private func addEmptyView(_ text: String) {
+    if emptyView == nil {
+      emptyView = EmptyView()
+      view.addSubview(emptyView!)
+      emptyView!.snp.makeConstraints { (maker) in
+        maker.top.equalTo(wordsTable.snp.top)
+        maker.leading.equalTo(wordsTable.snp.leading)
+        maker.trailing.equalTo(wordsTable.snp.trailing)
+        maker.bottom.equalTo(wordsTable.snp.bottom).offset(-keyboardHeight + self.view.safeAreaInsets.bottom)
+      }
+    }
+    emptyView?.text = text
   }
 }
 
@@ -158,16 +173,7 @@ extension TranslateVC: ITransalteVC {
   }
   
   func showEmpty() {
-    if emptyView == nil {
-      emptyView = EmptyView()
-      view.addSubview(emptyView!)
-      emptyView!.snp.makeConstraints { (maker) in
-        maker.top.equalTo(wordsTable.snp.top)
-        maker.leading.equalTo(wordsTable.snp.leading)
-        maker.trailing.equalTo(wordsTable.snp.trailing)
-        maker.bottom.equalTo(wordsTable.snp.bottom).offset(-keyboardHeight + self.view.safeAreaInsets.bottom)
-      }
-    }
+    addEmptyView("Nothing found")
   }
   
   func hideEmpty() {
@@ -185,6 +191,10 @@ extension TranslateVC: ITransalteVC {
   
   func showError(_ message: String) {
     showErrorAlert(message)
+  }
+  
+  func showStartView() {
+    addEmptyView("Search for translates")
   }
 }
 
